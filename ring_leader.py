@@ -1,6 +1,6 @@
 ### Distributed Systems Lab 03, 2020 - Ring Leader-Election Algorithm ###
 ### Leader Election Script ###
-### By Hids Samsudeen ###
+### By arc.hids ###
 
 import socket
 import threading
