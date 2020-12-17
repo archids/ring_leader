@@ -376,7 +376,7 @@ def main():
     # check for last received lease renewal message and if delayed
     # initiate leader voting process
         else:
-            time.sleep(5)
+            #time.sleep(5)
             if not halt_process_data or not task_queue.empty():
                 process_data(task_queue)
 
