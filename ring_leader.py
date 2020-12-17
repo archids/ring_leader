@@ -369,10 +369,11 @@ def main():
     while True:
         if iam_leader:
             print(WonR + f"\n[{LOCAL_ID}] CURRENT LEADER\n" + N)
-            time.sleep(LEASH_INTERVAL)
+            
             relayed_message.clear()
             relayed_message.append({"Header": "Lease"})
             renew_lease()
+            time.sleep(LEASH_INTERVAL)
     # check for last received lease renewal message and if delayed
     # initiate leader voting process
         else:
